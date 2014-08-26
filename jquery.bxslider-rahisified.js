@@ -1445,7 +1445,7 @@
 		 */
 		el.redrawSlider = function(){
 			// resize all children in ratio to new screen size
-			slider.children.add(el.find('.bx-clone')).width(calcSlideWidthidth());
+			slider.children.add(el.find('.bx-clone')).outerWidth(calcSlideWidthidth());
 			// adjust the height
 			slider.viewport.css('height', getViewportHeight());
 			// update the slide position
