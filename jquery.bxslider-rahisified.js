@@ -1498,7 +1498,7 @@
 		 * auto reload functionality
 		 */
     $(window).resize(function() {
-      if(slider.settings.autoReload) {
+      if(slider.settings.autoReload && $(window).width() != windowWidth) {
         el.reloadSlider();
       }
     });
